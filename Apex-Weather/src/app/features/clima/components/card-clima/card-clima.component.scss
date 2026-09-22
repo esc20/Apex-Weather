@@ -129,6 +129,41 @@
   animation: fadeIn 0.6s ease-out forwards;
 }
 
+@media (max-width: 480px) {
+  .card-clima-container {
+    width: 100%;
+    padding: 30px 20px;
+
+    .clima-principal {
+      flex-direction: column;
+      gap: 15px;
+
+      .temperatura-box .graus {
+        font-size: 4rem; // reduz um pouco, 5.5rem fica grande demais no mobile
+      }
+
+      .icone-box {
+        width: 90px;
+        height: 90px;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+
+    .detalhes-grid {
+      grid-template-columns: 1fr; // empilha sensação/umidade
+      gap: 15px;
+    }
+  }
+
+  .card-placeholder {
+    padding: 30px 20px;
+  }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
