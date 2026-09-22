@@ -103,7 +103,6 @@
 }
 
 .card-placeholder {
-  // CORRIGIDO: Mesma largura do card real para manter a transição invisível
   width: 500px;
   max-width: 100%;
   margin: 0 auto;
@@ -139,7 +138,7 @@
       gap: 15px;
 
       .temperatura-box .graus {
-        font-size: 4rem; // reduz um pouco, 5.5rem fica grande demais no mobile
+        font-size: 4rem; 
       }
 
       .icone-box {
@@ -154,13 +153,15 @@
     }
 
     .detalhes-grid {
-      grid-template-columns: 1fr; // empilha sensação/umidade
+      grid-template-columns: 1fr; 
       gap: 15px;
     }
   }
 
   .card-placeholder {
-    padding: 30px 20px;
+    width: 90%;
+    padding: 25px 20px;
+    border-radius: 14px;
   }
 }
 
